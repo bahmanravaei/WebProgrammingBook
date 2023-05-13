@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script type="text/javascript">
+function notEmpty(elem, helperMsg){
+if(elem.value.length == 0){
+alert(helperMsg);
+elem.focus();
+return false;
+}
+return true;
+}
+</script>
+</head>
+<body>
+<form>
+Required Field: <input type='text' id='req1'/>
+<input type='button' onclick="notEmpty(document.getElementById('req1'), 'Please
+Enter a Value')" value='Check Field' />
+</form>
+</body>
+</html>

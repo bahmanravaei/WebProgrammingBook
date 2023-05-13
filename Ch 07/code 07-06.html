@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script type="text/javascript">
+function isAlphaNumeric(elem, helperMsg){
+var alphaExp = /^[0-9a-zA-Z]+$/;
+if(elem.value.match(alphaExp)){
+return true;
+}else{
+alert(helperMsg);
+elem.focus();
+return false;
+}
+}
+</script>
+</head>
+<body>
+<form>
+Letters Only: <input type='text' id='letters'/>
+<input type='button'
+onclick="isAlphaNumeric(document.getElementById('letters'), 'Letters And Digits Only
+Please')"
+value='Check Field' />
+</form>
+</body>
+</html>
