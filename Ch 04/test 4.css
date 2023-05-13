@@ -1,0 +1,7 @@
+textarea.noScroll {
+background-image: url(smallPic.jpg);
+background-attachment: fixed;
+}
+textarea {
+background-image: url(smallPic.jpg);
+background-attachment: scroll;}
